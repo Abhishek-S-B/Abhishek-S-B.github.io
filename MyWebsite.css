@@ -1,0 +1,141 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color:#E9EEE7 ;
+}
+.Navbar{
+	padding:0px;
+	font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+}
+.Navbar a{
+	padding:30px;
+	color: #1D3577;
+	text-decoration: none;
+	position: relative;
+	left: 570px;
+	float:left;
+	bottom:20px;
+	display:block;
+
+}
+.Navbar a:hover{
+	
+	border-bottom: 2px solid #E63945;
+	padding-bottom: 5px;
+}
+.Navbar a:active{
+	border-bottom: 2px solid #E63945;
+	padding-bottom: 5px;
+}
+.ProfileBase1{
+	z-index: 2;
+	position: absolute;
+	left:60px;
+	margin:55px;
+	background-color: #457B9D;
+	width:83%;
+	height: 250px;
+	border: 1px solid #457B9D;
+	border-radius: 16px 16px 0px 0px;
+}
+.ProfileBase2{
+	position: absolute;
+	left:60px;
+	bottom: 46px;
+	margin:55px;
+	background-color: #FFFFFF;
+	width:83%;
+	height: 250px;
+	border: 1px solid #FFFFFF;
+	border-radius: 0px 0px 16px 16px;
+}
+.ProfilePic{
+	z-index: 5;
+	padding: 0px;
+	
+}
+.Pic1{
+	z-index: 4;
+	position: absolute;
+	left: 180px;
+	bottom:310px;
+	border:4px solid #C0BDBD;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+.Icons{
+	position: absolute;
+	left:600px;
+	bottom:50px;
+	font-size: 30px;
+	color:white;
+}
+h1{
+    position: absolute;
+    left: 570px;
+    bottom: 120px;
+    font-family: "arial";
+    color: white;
+    font-size: 40px;
+}
+.frontend{
+	position: absolute;
+	left:610px;
+	bottom:90px;
+	color:white;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20px;		
+}
+h2{
+	font-size:25px ;
+    color: #131313;
+    position: absolute;
+    top: 30px;
+    left: 68px;
+    font-family: droid-sans;
+    font-style: normal;
+    font-weight: 400;
+}
+.AboutMe{
+	opacity: 0.8;
+    position: absolute;
+    top:80px;
+    left: 68px;
+    font-size: 15px;
+    font-family: "arial";
+    line-height: 22px;
+}
+.ResumeDown{
+	padding:10px;
+	background-color: #EDEDED;
+	box-shadow: 1px 1px 8px 1px #C0BDBD;
+	position: absolute;
+	left:70px;
+	top:190px;
+	border: hidden;
+}
+.List{
+	color:#9F9F9F;
+	font-size: 17px;
+	font-family: arial;
+	display: block;
+	position: absolute;
+	left:570px;
+	bottom: 30px;
+}
+.List2{
+	color:#9F9F9F;
+	font-size: 17px;
+	font-family: arial;
+	display: block;
+	position: absolute;
+	left:750px;
+	bottom: 30px;
+}
+@media(max-width:1000px){
+	.ProfileBase1, .ProfileBase2{
+		display: none;
+	}
+}

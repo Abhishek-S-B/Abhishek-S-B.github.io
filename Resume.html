@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Resume</title>
+	<link href="Resume.css" type="text/css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<style>
+	.highlighted {
+	color:white;
+	background-color: #C7C7C7;
+	border-radius: 0px 0px 16px 16px;	
+			}
+		.wrapper,.CSSW {
+				width: 300px;
+			}			
+		.progress-bar,.CSSpb {
+				width: 100%;
+				background-color: #e0e0e0;
+				padding: 3px;
+				border-radius: 3px;
+				box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+			}		
+		.progress-bar-fill, .CSS {
+				display: block;
+				height: 10px;
+				background-color: #659cef;
+				border-radius: 3px;
+				transition: width 500ms ease-in-out;
+			}
+	</style>
+	
+	
+</head>
+
+<body>
+	<div class="Navbar">
+	<a href="index.html" class="Nav">Home</a>
+	<a href="Resume.html" class="Nav">Personal Info</a>
+	<a href="Services.html" class="Nav">Services</a>
+	<a href="Portfolio.html" class="Nav">Portfolio</a>
+	<a href="#" class="Nav">Blog</a>
+	<a href="#" class="Nav">Contact</a>
+	</div>
+	<div class="ResumeBox">
+	<div class="Nav">
+		<a class="Profile">Profile</a>
+		<div id="Profile">
+			
+		<h3 class="PersonalInfo">Personal Information</h3>
+			
+				<div class="List">
+			<h4>Full Name: &emsp;&emsp;&emsp; Abhishek 'S' Batakurki</h4>
+			<h4>Address: &emsp;&emsp;&emsp;&emsp; Vinayak Nagar 3<sup>rd</sup> Cross Bagalkot-587101, Karnataka </h4>
+			<h4>Mobile No: &emsp;&emsp;&emsp;+918310616229</h4>
+			<h4>E-mail:&emsp;&emsp;&emsp;&emsp;&emsp;Abhisheksb9740@gmail.com</h4>
+			<h4>Nationality:&emsp;&emsp;&emsp;India</h4>
+			<h4>Date of Birth:&emsp;&emsp;20-01-2001</h4>
+			<h4>Gender: &emsp;&emsp;&emsp;&emsp;  Male</h4>
+				</div>
+			
+		<hr>
+			<div class="ProfilePic">
+	<img src="profile.jpg" alt="ProfilePicture" class="Pic1" width="160px" >
+	</div>
+		</div>
+		</div>
+		<div class="Nav">
+		<a class="Education">Education</a>
+		<div id="Education">
+		<h3 class="PersonalInfo">Education</h3>
+			<div class="List EducationList">
+			<h4>School: &emsp;&emsp;&emsp;&emsp; Vivekananda Pre-Primary, Primary and High School Bagalkot </h4>
+			<h4>College: &emsp;&emsp;&emsp;&emsp; Ajeet PU College Navanagar, Bagalkot-587102, Karnataka </h4>
+			<h4>Combination:&emsp;&emsp;PCMCsci</h4>	
+			<h4>University: &emsp;&emsp;&emsp;Basaveshwar Engineering College Bagalkot-587102, Karnataka</h4>
+			<h4>Course:  &emsp;&emsp;&emsp;&emsp;   BE: Computer Science and Engineering</h4>	
+			<h4>Batch Of:&emsp;&emsp;&emsp;&emsp;2018-2022</h4>
+			
+				</div>
+			
+			
+		<hr class="EduHR">
+		</div>
+		</div>
+		<div class="Nav">
+		<a class="Skills">Skills</a>
+		<div id="Skills">
+		<h3 class="PersonalInfo Skl">Skills</h3>
+			<div class="List SkillList">
+			<h4 class="Progressbar">HTML: </h4>
+			<div class="wrapper">
+			<div class="progress-bar">
+				<span class="progress-bar-fill" style="width: 70%;"></span>
+			</div>
+		</div>
+			<h4 class="Progressbar">CSS: </h4>
+			<div class="wrapper CSSW">
+			<div class="progress-bar CSSpb">
+				<span class="progress-bar-fill 	CSS" style="width: 60%;"></span>
+			</div>
+		</div>		
+			<h4 class="Progressbar">JS:  </h4>
+			<div class="wrapper JSW">
+			<div class="progress-bar JSpb">
+				<span class="progress-bar-fill JS" style="width: 30%;"></span>
+			</div>
+		</div>
+				<h4 class="Progressbar">JAVA:  </h4>
+			<div class="wrapper JAVAW">
+			<div class="progress-bar JAVApb">
+				<span class="progress-bar-fill JAVA" style="width: 30%;"></span>
+			</div>
+		</div>	
+				<h4 class="Progressbar">BOOTSTRAP:  </h4>
+			<div class="wrapper BOOTSTRAPW">
+			<div class="progress-bar BOOTSTRAPpb">
+				<span class="progress-bar-fill BOOTSTRAP" style="width: 30%;"></span>
+			</div>
+		</div>		
+			<h4 class="Progressbar">GRAPHIC<br> DESIGNING:  </h4>
+			<div class="wrapper BOOTSTRAGD">
+			<div class="progress-bar BOOTSTRAPgd">
+				<span class="progress-bar-fill BOOTSTRAP" style="width: 50%;"></span>
+			</div>
+		</div>		
+			
+			</div>
+			
+		<hr class="SkillHR">
+		</div>
+			</div>
+		</div>
+	
+	<script type="text/javascript">
+		$(".Profile").addClass("highlighted");
+	$(".Profile").click(function(){
+		$("#Profile").show();
+		$("#Education").hide();
+		$("#Skills").hide();
+		$(this).addClass("highlighted");
+		$(".Education").removeClass("highlighted");
+		$(".Skills").removeClass("highlighted");
+	});
+		
+		$(".Education").click(function(){
+		$("#Education").show();
+		$("#Profile").hide();
+		$("#Skills").hide();
+		$(this).addClass("highlighted");
+		$(".Profile").removeClass("highlighted");
+		$(".Skills").removeClass("highlighted");	
+		});
+		
+		$(".Skills").click(function(){
+		$("#Skills").show();
+		$("#Profile").hide();
+		$("#Education").hide();
+		$(this).addClass("highlighted");
+		$(".Education").removeClass("highlighted");
+		$(".Profile").removeClass("highlighted");	
+		});
+		
+	</script>
+</body>
+</html>
